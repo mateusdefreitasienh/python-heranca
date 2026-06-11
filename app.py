@@ -8,6 +8,7 @@ moto = Veiculo(marca  = "Yamaha",
                ano    =  2020,
                cor    = "Azul",
                placa  = "III-1234")
+
 voyage = CarroCombustao(marca  = "Volkswagen",
                         modelo = "Novo Voyage",
                         ano    =  2018,
@@ -17,6 +18,7 @@ voyage = CarroCombustao(marca  = "Volkswagen",
                         tipo_combustivel = "Flex",
                         cambio = "Manual",
                         consumo_combustao = 10)
+
 byd = CarroEletrico(marca  = "BYD",
                     modelo = "Dolphin",
                     ano    =  2025,
@@ -51,4 +53,6 @@ print(byd_king)
 voyage.abastacer(10)
 voyage.abastacer(46)
 byd.recarregar(10)
+byd_king.abastacer(10)
+byd_king.carga_rapida()
 
