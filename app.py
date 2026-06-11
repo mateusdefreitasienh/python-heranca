@@ -27,12 +27,26 @@ byd = CarroEletrico(marca  = "BYD",
                     autonomia = 348,
                     consumo_eletrico = 12)
 
-corolla_altis = CarroHibrido()
+byd_king = CarroHibrido(marca  = "BYD",
+                        modelo = "King",
+                        ano    =  2025,
+                        cor    = "Branco",
+                        placa  = "BBB-1234",
+                        volume_tanque = 48,
+                        tipo_combustivel = "Flex",
+                        cambio = "Automático",
+                        consumo_combustao = 10,
+                        capacidade_bateria = 8.3,
+                        tipo_bateria = "LFP",
+                        autonomia = 75,
+                        consumo_eletrico = 12
+                        )
 
 
 print(moto)
 print(voyage)
 print(byd)
+print(byd_king)
 
 voyage.abastacer(10)
 voyage.abastacer(46)

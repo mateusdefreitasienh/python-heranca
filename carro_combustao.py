@@ -10,7 +10,7 @@ class CarroCombustao(Veiculo):
     """
     Construtor da classe carro a combustao
     """
-    super().__init__(modelo, marca, cor, ano, placa) # classe pai
+    Veiculo.__init__(self, modelo, marca, cor, ano, placa) # classe pai
     self.volume_tanque = volume_tanque # Especificas para C. Combustao
     self.nivel_tanque = 0 # cria o carro com o tanque zerado
     self.tipo_combustivel = tipo_combustivel

@@ -10,7 +10,7 @@ class CarroEletrico(Veiculo):
     """
     Construtor da classe carro eletrico
     """
-    super().__init__(modelo, marca, cor, ano, placa) # classe pai
+    Veiculo.__init__(self, modelo, marca, cor, ano, placa) # classe pai
     self.capacidade_bateria = capacidade_bateria
     self.tipo_bateria = tipo_bateria
     self.nivel_bateria = 0
